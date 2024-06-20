@@ -1,0 +1,118 @@
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    background-image: url(src/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), -1px -1px 2px rgb(255, 132, 247);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.aboutSong {
+    margin: 10px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+.container h2 {
+    font-size: 34px;
+}
+
+#song {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+#watchClip {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+
+    animation-name: clipAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes clipAnimation {
+    0% {
+        font-size: 20px;
+    }
+
+    50% {
+        font-size: 22px;
+    }
+
+    100% {
+        font-size: 20px;
+    }
+}
+#watchClip:hover {
+    color: rgb(226, 0, 0);
+}
+#watchClip:active {
+    color: rgb(205, 0, 0);
+}
+
+img {
+    max-width: 400px;
+    width: 60%;
+    height: auto;
+}
+
+.border {
+    font-weight: 400;
+
+    margin-top: 40px;
+
+    border: 0px solid black;
+    display: block;
+    background-color: rgba(212, 214, 217, 0.787);
+    padding: 15px;
+    border-radius: 50px;
+    max-width: fit-content;
+    width: 90%;
+
+    margin-left: 100px;
+    margin-right: 10%;
+    margin-inline: auto;
+}
+
+#animation {
+    height: 1px;
+}
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.pagination a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 34px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    padding: 0px 13px;
+}
+.pagination a.active{
+    background-color: rgba(212, 214, 217, 0.787);
+    border-radius: 7px;
+    font-weight: 700;
+}
+.pagination a:hover:not(.active) {
+    background-color: rgba(212, 214, 217, 0.457);
+    border-radius: 7px;
+}
